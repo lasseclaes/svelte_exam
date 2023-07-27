@@ -1,5 +1,5 @@
 <script lang="ts">
-
+  // window.location.replace('/bestillinger');
 </script>
 
 <h1>Welcome to SvelteKit?</h1>

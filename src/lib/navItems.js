@@ -1,52 +1,40 @@
 export const navItems = [
   {
-    title: "Ubehandlede",
-    count: 12,
-    slug: "ubehandlede",
+    title: "Bestillinger",
+    slug: "bestillinger",
+    submenu: [
+      {
+        subm_title: "Arkiv",
+        subm_slug: "arkiv",
+      },
+      {
+        subm_title: "Slettede",
+        subm_slug: "slettede",
+      },
+    ],
   },
   {
-    title: "Dialog",
-    count: 6,
-    slug: "dialog",
+    title: "Eksamener",
+    slug: "eksamener",
   },
   {
-    title: "Korrektur",
-    count: 1,
-    slug: "korrektur",
+    title: "Statistik",
+    slug: "statistik",
   },
   {
-    title: "Godkendte",
-    count: 0,
-    slug: "godkendte",
+    title: "Fakturering",
+    slug: "fakturering",
   },
   {
-    title: "Til brænding",
-    count: 0,
-    slug: "tilbraending",
+    title: "Rush hour",
+    slug: "rush_hour",
   },
   {
-    title: "Brændte",
-    count: 0,
-    slug: "braendte",
+    title: "Dubletter",
+    slug: "dubletter",
   },
   {
-    title: "Kontrolleret",
-    count: 0,
-    slug: "kontrolleret",
-  },
-  {
-    title: "Direkte forsendelse",
-    count: 0,
-    slug: "direkte-forsendelse",
-  },
-  {
-    title: "Afsendte",
-    count: 0,
-    slug: "afsendte",
-  },
-  {
-    title: "Alle",
-    count: 0,
-    slug: "alle",
+    title: "Udtræk",
+    slug: "udtraek",
   },
 ];

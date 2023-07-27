@@ -1,4 +1,4 @@
 import { redirect } from "@sveltejs/kit";
 export function load() {
-  throw redirect(308, "ubehandlede"); //permanent redirect
+  throw redirect(308, "bestillinger"); //permanent redirect
 }
