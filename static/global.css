@@ -2,3 +2,13 @@
   list-style-type: none;
 }
  */
+
+.ljn-nav-tabs {
+  --bs-nav-link-padding-x: 0.4rem;
+  /* font-size: 0.9rem; */
+}
+
+input[type="text"] {
+  /* background-color: red; */
+  width: 5ch;
+}

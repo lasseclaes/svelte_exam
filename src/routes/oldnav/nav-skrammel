@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-sm bg-body-tertiary">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarToggler"
+      aria-controls="navbarToggler"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-wrap">
+        {#each navItems as navItem, i}
+        <li class="nav-item">
+          {#if $page.url.pathname === "/" + navItem.slug}
+          <a class="nav-link active" href="{navItem.slug}" aria-current="page">
+            {navItem.title} {#if navItem.count}({navItem.count}){/if}
+          </a>
+          {:else}
+          <a class="nav-link" href="{navItem.slug}">
+            {navItem.title} {#if navItem.count}({navItem.count}){/if}
+          </a>
+          {/if}
+        </li>
+        {/each}
+
+        <!--         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+class="list-group-item list-group-item-action active" aria-current="true"
