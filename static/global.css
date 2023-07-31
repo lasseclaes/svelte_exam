@@ -12,3 +12,9 @@ input[type="text"] {
   /* background-color: red; */
   width: 5ch;
 }
+
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
