@@ -62,10 +62,10 @@
             <input type="hidden" name="orderid" 
             value="{order.ordernr}">
             <select class="form-select" aria-label="Vælg status" on:change={updateData}>
-                <option selected value="ubehandlede">Ubehandlet</option>
-                <option value="godkendte">Godkendt</option>
-                <option value="dialog">Dialog</option>
-                <option value="korrektur">Korrektur</option>
+                <option selected={order.status === "ubehandlede"} value="ubehandlede">Ubehandlet</option>
+                <option selected={order.status === "godkendte"} value="godkendte">Godkendt</option>
+                <option selected={order.status === "dialog"} value="dialog">Dialog</option>
+                <option selected={order.status === "korrektur"} value="korrektur">Korrektur</option>
             </select>
 
         </form></td> <!-- /* {order.status}*/ -->
